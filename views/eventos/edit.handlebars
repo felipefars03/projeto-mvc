@@ -1,0 +1,15 @@
+<h1>Editar Evento</h1>
+
+<form action="/eventos/edit" method="POST">
+<input type="hidden" name="id" value="{{evento.id}}">
+    <label for="title">Título</label>
+<input type="text" name="title" value="{{evento.title}}">
+    <label for="description">Descrição</label>
+<input type="text" name="description" value="{{evento.description}}">
+    <label for="price">Preço</label>
+<input type="namber" name="price" value="{{evento.price}}">
+    <label for="img">Imagem</label>
+<input type="file" name="img" value="{{evento.img}}">
+<input type="submit" value="Editar">
+
+</form>

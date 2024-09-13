@@ -1,0 +1,18 @@
+<div class="main-container">
+
+{{#each eventos}}
+<a href="eventos/evento/{{this.id}}">
+<div class="container-card">
+<img src="/images/{{this.img}}" alt="">
+</a>
+<h2 class="title">{{this.title}}</h2>
+
+</div>
+
+<form action="/eventos/remove" method="post">
+<input type="hidden" name="id" value="{{this.id}}">
+<input type="submit" value="Excluir">
+</form>
+{{/each}}
+
+</div>
